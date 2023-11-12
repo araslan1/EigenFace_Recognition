@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../static/signup.css">
+</head>
+<body>
+  <h1>Click Signup once you've taken a snapshot and typed in your name</h1>
+  <form id="signUpForm">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" required />
+
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" required />
+
+      <button type="submit">Sign Up</button>
+  </form>
+  <video id="cameraPreview" autoplay></video>
+  <button id="shot">Take Shot</button>
+  <div id="faceOverlay"></div>
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  <script src="../static/signup.js"></script>
+</body>
+</html>

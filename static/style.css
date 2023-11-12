@@ -1,0 +1,18 @@
+#faceOverlay{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 280px;
+    left: 520px;
+    border: 10px solid blue;
+    z-index: 3;
+    border-radius: 10% 10% 30% 30%;
+
+}
+
+#camerapreview{
+    bottom: 0px;
+    left: 200px;
+}
+
+
