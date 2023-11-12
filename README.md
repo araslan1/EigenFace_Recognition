@@ -3,7 +3,7 @@
 Inspiration: 
 I first read about eigenfaces being used for facial recognition from an article on twitter, and found it to be a very amazing way of applying linear algebra. So this was my attempt at finding eigenfaces for facial recognition.
 
-What it does: 
+# What it does: 
 My project allows you to create an account merely by typing in your name and taking a snapshot of your face. For future logins, you merely take a picture of your face again and my program will ideally identify who you are and relay back on the screen the name you created your account with.
 
 Project Structure:
