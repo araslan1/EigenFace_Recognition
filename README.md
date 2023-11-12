@@ -8,15 +8,21 @@ My project allows you to create an account merely by typing in your name and tak
 
 # Project Structure:
 
-src: python backend
-  db: database storing users' face information and their name in .npy files, also contains files to view and clear the database
-  eigenface: the main eigenface algorithm is here!
-    Service: contains back-end logic of "sign in" and "sign up" functions, sign up contains the logic for processing images
-    Training: contains train.py for training the models, the output files of the training process, and the "Pictures" directory for storing the pictures that I trained the model on. 
-static: javascript and css files for each page (we have three pages: /, /signup, /signin)
-templates: html templates for rendering the pages
-main.py: the server of this project.
+### src
+- **python backend**
+    - `db`: Database storing users' face information and their name in .npy files. Also contains files to view and clear the database.
+    - `eigenface`: Main algorithm for eigenface implementation.
+        - `Service`: Backend logic for "sign in" and "sign up" functions. `sign up` contains the logic for processing images.
+        - `Training`: Contains `train.py` for training models, output files of the training process, and the `Pictures` directory for storing training images.
 
+### static
+- JavaScript and CSS files for each page. (Three pages: `/`, `/signup`, `/signin`)
+
+### templates
+- HTML templates for rendering the pages.
+
+### main.py
+- Server script for the project.
 
 # How I built it:
 I built the frontend of the application with javascript, CSS, HTML and the backend with flask. My model was training in src/eigenface/Training/train.py. It was trained on pictures I got my friends to take on my computer in the Training/Pictures directory. I removed these pictures from the directory for safety purposes. For each image, it was processed using a pre-trained cascade classifier to detect frontal faces. The alternative was to merely draw a face cutout onto the web camera preview so that users could manually align their faces into the cutout. This cutout would be cropped and serve as my “face” that I would use for training. However, it seemed like a good option to use the classifier for user experience and also ease in testing my program’s core functionality (recognition with eigenfaces). 
