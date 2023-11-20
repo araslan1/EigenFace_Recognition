@@ -1,6 +1,6 @@
 # EigenFace_Recognition
 
-Inspiration: 
+# Inspiration: 
 I first read about eigenfaces being used for facial recognition from an article on twitter, and found it to be a very amazing way of applying linear algebra. So this was my attempt at finding eigenfaces for facial recognition.
 
 # What it does: 
