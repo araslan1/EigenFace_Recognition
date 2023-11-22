@@ -16,7 +16,7 @@ My project allows you to create an account merely by typing in your name and tak
         - `Training`: Contains `train.py` for training models, output files of the training process, and the `Pictures` directory for storing training images.
 
 ### static
-- JavaScript and CSS files for each page. (Three pages: `/`, `/signup`, `/signin`)
+- JavaScript and CSS files for each page. (Three page routes: `/`, `/signup`, `/signin`)
 
 ### templates
 - HTML templates for rendering the pages.
